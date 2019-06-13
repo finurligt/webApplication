@@ -2,7 +2,34 @@ div.gameform {
     display: inline-block;
 }
 
-div.main-section {
-  width: 30%;
+h1 {
+  width: 150px;
   margin: auto;
+}
+
+div.main-section {
+  width: 470px;
+  margin: auto;
+  border: #e8491d 3px solid;
+}
+
+input.scoreinput {
+  width: 30px;
+}
+
+button.button1 {
+  height:38px;
+  background: #F280A1;
+  border:none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+@media(max-width: 768px) {
+  body{
+    /* display:none; */
+  }
+
+
 }
