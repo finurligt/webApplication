@@ -1,3 +1,8 @@
 div.gameform {
     display: inline-block;
 }
+
+div.main-section {
+  width: 30%;
+  margin: auto;
+}
