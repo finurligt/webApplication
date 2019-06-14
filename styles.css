@@ -1,15 +1,32 @@
+#header {
+  height: 60px;
+  background-color: #333333;
+  padding-top: 20px;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+}
+
 div.gameform {
     display: inline-block;
 }
 
 h1 {
   width: 150px;
-  margin: auto;
+  color: #F280A1;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: 2%;
+
 }
 
 div.main-section {
   width: 470px;
-  margin: auto;
+  margin-left: 160px;
+  padding: 1%;
   border: #e8491d 3px solid;
 }
 
@@ -26,10 +43,40 @@ button.button1 {
   margin-top: 10px;
 }
 
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
 @media(max-width: 768px) {
   body{
-    /* display:none; */
+
+    }
+  .sidenav {
+      display: none;
   }
-
-
+  div.main-section {
+    margin: auto;
 }
