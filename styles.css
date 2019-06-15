@@ -1,3 +1,47 @@
+/* FONT BULLSHIT*/
+@font-face {
+  font-family: 'dpong-font';
+  src:  url('fonts/dpong-font.eot?jyk4s7');
+  src:  url('fonts/dpong-font.eot?jyk4s7#iefix') format('embedded-opentype'),
+    url('fonts/dpong-font.ttf?jyk4s7') format('truetype'),
+    url('fonts/dpong-font.woff?jyk4s7') format('woff'),
+    url('fonts/dpong-font.svg?jyk4s7#dpong-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="dfont-"], [class*=" dfont-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dpong-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dfont-game-logo:before {
+  content: "\e900";
+}
+.dfont-ladder:before {
+  content: "\e901";
+}
+.dfont-profile:before {
+  content: "\e902";
+}
+.dfont-settings:before {
+  content: "\e903";
+}
+
+
+/*FONT BULLSHIT ENDS*/
+
+
 #header {
   height: 60px;
   background-color: #333333;
@@ -65,6 +109,14 @@ button.button1 {
   display: block;
 }
 
+.sidenav div {
+  width: 40px;
+  float: left;
+  text-align: center;
+  padding-right: 7px;
+}
+
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
@@ -72,11 +124,64 @@ button.button1 {
 
 @media(max-width: 768px) {
   body{
-
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     }
+
+
+    #wrapper {
+    padding: 0%;
+}
+#wrap {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
   .sidenav {
-      display: none;
+      all: initial;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #111;
+
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
   }
+
+  .nav-text {
+    display: none;
+  }
+
+.sidenav a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 7px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  position: relative;
+}
+
+.sidenav div {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  display: inline;
+
+}
+
   div.main-section {
     margin: auto;
 }
