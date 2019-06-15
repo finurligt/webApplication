@@ -51,6 +51,8 @@
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 div.gameform {
@@ -76,6 +78,10 @@ div.main-section {
 
 input.scoreinput {
   width: 30px;
+}
+
+input.nameinput {
+  width: 170px;
 }
 
 button.button1 {
@@ -184,4 +190,11 @@ button.button1 {
 
   div.main-section {
     margin: auto;
+}
+
+
+@media(max-width: 480px) {
+  input.nameinput {
+    width: 140px;
+  }
 }
